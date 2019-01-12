@@ -822,23 +822,23 @@
             <div class="flex">
 
               <div class="tomato">
-                <input type="checkbox" name="useful" id="useful" value="tomato" />
-                <label class="veggies" for="useful"></label>
+                <input type="checkbox" name="tomato" id="tomato" value="tomato" />
+                <label class="veggies" for="tomato"></label>
               </div>
 
               <div class="lettuce">
-                <input type="checkbox" name="useful" id="useful" value="lettuce" />
-                <label class="veggies" for="useful"></label>
+                <input type="checkbox" name="lettuce" id="lettuce" value="lettuce" />
+                <label class="veggies" for="lettuce"></label>
               </div>
 
               <div class="bell-pepper">
-                <input type="checkbox" name="useful" id="useful" value="bell-pepper" />
-                <label class="veggies" for="useful"></label>
+                <input type="checkbox" name="bell-pepper" id="bell-pepper" value="bell-pepper" />
+                <label class="veggies" for="bell-pepper"></label>
               </div>
 
               <div class="carrot">
-                <input type="checkbox" name="useful" id="useful" value="carrot" />
-                <label class="veggies" for="useful"></label>
+                <input type="checkbox" name="carrot" id="carrot" value="carrot" />
+                <label class="veggies" for="carrot"></label>
               </div>
             </div>
 
@@ -856,8 +856,8 @@ export default {
 </script>
 <style scoped>
   .veggie {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .veggies {
     margin-bottom: 20px;
@@ -911,7 +911,7 @@ input[type="radio"] + svg {
 input[class="house"]:hover + svg,
 input[class="house"]:checked + svg,
 input[class="house"]:focus + svg {
-	fill:green;
+	fill:#89CC93;
 }
 
 input + svg {
@@ -954,7 +954,7 @@ input + svg {
   height: 120px;
 }
 .tomato input[type="checkbox"]:checked + label {
-  background: url('../../assets/tomato-color.png');
+  background: url('../../assets/tomato-color.png') no-repeat;
   width: 120px;
   height: 120px;
 }
@@ -968,7 +968,7 @@ input + svg {
   height: 120px;
 }
 .carrot input[type="checkbox"]:checked + label {
-  background: url('../../assets/gardenlogo.png');
+  background: url('../../assets/carrot-color.png') no-repeat;
   width: 120px;
   height: 120px;
 }
@@ -982,7 +982,7 @@ input + svg {
   height: 120px;
 }
 .lettuce input[type="checkbox"]:checked + label {
-  background: url('../../assets/gardenlogo.png');
+  background: url('../../assets/Salad-color.png') no-repeat;
   width: 120px;
   height: 120px;
 }
@@ -996,7 +996,7 @@ input + svg {
   height: 120px;
 }
 .bell-pepper input[type="checkbox"]:checked + label {
-  background: url('../../assets/tomato-color.png');
+  background: url('../../assets/pepper-color.png') no-repeat;
   width: 120px;
   height: 120px;
 }
