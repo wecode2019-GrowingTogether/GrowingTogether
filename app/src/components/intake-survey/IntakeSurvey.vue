@@ -818,49 +818,12 @@
 
         <fieldset>
             <legend>What kinds of vegetables do you like?</legend>
-            <div class="col-xs-4 col-sm-3 col-md-2 nopad text-center">
-              <label class="image-checkbox">
-                <img class="img-responsive" src="https://dummyimage.com/600x400/000/fff" />
-                <input type="checkbox" name="image[tomato]" value="tomato" />
-                <i class="fa fa-check hidden"></i>
-              </label>
-            </div>
 
-            <div class="col-xs-4 col-sm-3 col-md-2 nopad text-center">
-              <label class="image-checkbox">
-                <img class="img-responsive" src="https://dummyimage.com/600x400/000/fff" />
-                <input type="checkbox" name="image[tomato]" value="tomato" />
-                <i class="fa fa-check hidden"></i>
-              </label>
-            </div>
-
-            <div>
-                <label for="medium">Medium
-                  <input class="house" type="radio" name="housesize" id="medium" value="medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z" /></svg>
-                </label>
-            </div>
-
-            <div>
-                <label for="large">Large
-                  <input class="house" type="radio" name="housesize" id="large" value="large">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z" /></svg>
-                </label>
-            </div>
-
-            <div>
-                <label for="extralarge">Extra Large
-                  <input class="house" type="radio" name="housesize" id="extralarge" value="extralarge">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" viewBox="0 0 24 24"><path d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z" /></svg>
-                </label>
+            <div class="tomato">
+              <input type="checkbox" name="useful" id="useful" />
+              <label for="useful">It is useful?</label>
             </div>
         </fieldset>
-
-
-
-
-
-
       <button>Submit</button>
     </form>
   </section>
@@ -873,6 +836,10 @@ export default {
 
 </script>
 <style scoped>
+  .veggie {
+    width: 100px;
+    height: 100px;
+  }
   fieldset {
     margin: 15px 30px;
     padding: 30px;
@@ -946,35 +913,20 @@ input + svg {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
-/*image gallery*/
-.image-checkbox {
-	cursor: pointer;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	border: 4px solid transparent;
-	margin-bottom: 0;
-	outline: 0;
-}
-.image-checkbox input[type="checkbox"] {
-	display: none;
-}
 
-.image-checkbox-checked {
-	border-color: #4783B0;
+.tomato input[type="checkbox"] {
+  display: none;
 }
-.image-checkbox .fa {
-  position: absolute;
-  color: #4A79A3;
-  background-color: #fff;
-  padding: 10px;
-  top: 0;
-  right: 0;
+.tomato input[type="checkbox"]+label {
+  background: url('../../assets/GG-Logo.png') no-repeat;
+  width:120px;
+  height: 120px;
 }
-.image-checkbox-checked .fa {
-  display: block !important;
+.tomato input[type="checkbox"]:checked + label {
+  background: url('../../assets/gardenlogo.png');
+  width: 120px;
+  height: 120px;
 }
-
 
 
 </style>
