@@ -1,29 +1,20 @@
-# growing_together
+# WECODE JANUARY 2019
 
-## Project setup
-```
-npm install
-```
+#THE CHALLENGE
+Build a digital experience that will help a non-profit organizations in their day to day activities using public and open-source technology. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+#GROWING GARDENS
+Growing Gardens uses the experience of growing food in schools, backyards and correctional facilities to cultivate healthy, equitable communities.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#OUR GOAL
+Create a platform to facilitate communication and collect information about Growing Gardens members.
 
-### Run your tests
-```
-npm run test
-```
+#MEMBERS
+Joanaa Papaleo
+Erika Martinez
+Kristin Hortsch
+Olivia Hinton
+Teonna Zaragoza
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#CREDIT
+Thank you to Nikki Pantony, author of pure CSS-SVG radio selector buttons.
