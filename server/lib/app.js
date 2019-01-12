@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const auth = require('./routes/auth');
-const goals = require('./routes/goals');
+const goals = require('./routes/survey');
 const jwt = require('jsonwebtoken');
 const APP_SECRET = 'HI';
 
