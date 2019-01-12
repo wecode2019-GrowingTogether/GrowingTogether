@@ -3,7 +3,7 @@
 
    <header>
      <h1>Growing Gardens</h1>
-     <img src="../assets/GG-Logo.png"><br/>
+     <img src="./assets/GG-Logo.png"><br/>
      <span v-if="user">
         HELLO {{user.username}}
      </span>
@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import api from '../services/api';
-import Auth from './auth/Auth';
+import api from './services/api';
+import Auth from './components/auth/Auth';
 
 export default {
  data() {
