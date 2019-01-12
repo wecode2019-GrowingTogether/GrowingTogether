@@ -5,10 +5,10 @@
      <h1>Growing Gardens</h1>
      <img src="./assets/GG-Logo.png"><br/>
      <span v-if="user">
-        HELLO {{user.username}}
+        Hello {{user.username}}
      </span>
      <nav v-if="user">
-       <RouterLink to="/">HOME</RouterLink>
+       <button><RouterLink class="button" to="/">Home</RouterLink></button>
        <button @click="logout()"> Logout </button>
      </nav>
    </header>
@@ -75,13 +75,31 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
  font-family: 'Avenir', Helvetica, Arial, sans-serif;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
  text-align: center;
  color: #2c3e50;
- margin-top: 60px;
 }
+
+.button {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  height: 180px;
+  background: black;
+  margin: 0;
+  padding: 0
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+
 </style>

@@ -46,8 +46,8 @@ export default {
       });
   },
 
-  getGoals() {
-    return fetch('/api/goals', {
+  getSurveys() {
+    return fetch('/api/survey', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -57,37 +57,14 @@ export default {
       .then(response => response.json());
   },
 
-  addGoal(goal) {
-    return fetch('/api/goals', {
+  addSurvey() {
+    return fetch('/api/survey', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': token
       },
-      body: JSON.stringify(goal)
-    })
-      .then(response => response.json());
-  },
-
-  updateGoal(goal) {
-    return fetch(`/api/goals/${goal.id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': token
-      },
-      body: JSON.stringify(goal)
-    })
-      .then(response => response.json());
-  },
-
-  getGoalStats() {
-    return fetch('/api/goals/stats', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': token
-      }
+      body: JSON.stringify()
     })
       .then(response => response.json());
   }
