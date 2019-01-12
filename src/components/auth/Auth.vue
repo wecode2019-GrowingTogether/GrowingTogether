@@ -54,7 +54,6 @@
           <input v-model="profile.email" required>
         </label>
 
-
         <label>
           Password:
           <input type="password" v-model="profile.password" required>

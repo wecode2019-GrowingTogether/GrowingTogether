@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <header>
-      <h1>Growing Gardens</h1>
+        <h1>Growing Gardens</h1>
+        <img src="../assets/GG-Logo.png"><br/>
       <nav v-if="user">
         <RouterLink to="/">Home</RouterLink>
         <a href="#" @click="handleLogout">Logout</a>
@@ -9,8 +10,6 @@
     </header>
 
     <main>
-      <img alt="Vue logo" src="../assets/gardenlogo.png"><br/>
-
       <RouterView v-if="user" v-bind:user="user"/>
       <Auth v-else
         v-bind:onSignUp="handleSignUp"
@@ -90,6 +89,7 @@ nav a {
   background: white;
 }
 header {
+  display: flex;
   background: black;
   color: white;
   height: 130px;
@@ -101,7 +101,7 @@ header {
   flex-direction: column;
 }
 h1 {
-  margin: -20px 0px 10px 0px;
+  margin: 0px;
   font-size: 3em;
 }
 body {
