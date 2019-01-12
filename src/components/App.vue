@@ -20,7 +20,7 @@
 </template>
 
 <script>
-// import api from '../services/api';
+import api from '../services/api';
 import Auth from './auth/Auth';
 
 export default {
