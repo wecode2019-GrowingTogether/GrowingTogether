@@ -819,10 +819,29 @@
         <fieldset>
             <legend>What kinds of vegetables do you like?</legend>
 
-            <div class="tomato">
-              <input type="checkbox" name="useful" id="useful" />
-              <label for="useful">It is useful?</label>
+            <div class="flex">
+
+              <div class="tomato">
+                <input type="checkbox" name="tomato" id="tomato" value="tomato" />
+                <label class="veggies" for="tomato"></label>
+              </div>
+
+              <div class="lettuce">
+                <input type="checkbox" name="lettuce" id="lettuce" value="lettuce" />
+                <label class="veggies" for="lettuce"></label>
+              </div>
+
+              <div class="bell-pepper">
+                <input type="checkbox" name="bell-pepper" id="bell-pepper" value="bell-pepper" />
+                <label class="veggies" for="bell-pepper"></label>
+              </div>
+
+              <div class="carrot">
+                <input type="checkbox" name="carrot" id="carrot" value="carrot" />
+                <label class="veggies" for="carrot"></label>
+              </div>
             </div>
+
         </fieldset>
       <button>Submit</button>
     </form>
@@ -837,8 +856,20 @@ export default {
 </script>
 <style scoped>
   .veggie {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+  }
+  .veggies {
+    margin-bottom: 20px;
+    color: green;
+    font-weight: bold;
+    font-size: 1.5em;
+    z-index: 10;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   fieldset {
     margin: 15px 30px;
@@ -880,7 +911,7 @@ input[type="radio"] + svg {
 input[class="house"]:hover + svg,
 input[class="house"]:checked + svg,
 input[class="house"]:focus + svg {
-	fill:green;
+	fill:#89CC93;
 }
 
 input + svg {
@@ -918,12 +949,54 @@ input + svg {
   display: none;
 }
 .tomato input[type="checkbox"]+label {
-  background: url('../../assets/GG-Logo.png') no-repeat;
+  background: url('../../assets/whitetomato.svg') no-repeat;
   width:120px;
   height: 120px;
 }
 .tomato input[type="checkbox"]:checked + label {
-  background: url('../../assets/gardenlogo.png');
+  background: url('../../assets/tomato-color.png') no-repeat;
+  width: 120px;
+  height: 120px;
+}
+
+.carrot input[type="checkbox"] {
+  display: none;
+}
+.carrot input[type="checkbox"]+label {
+  background: url('../../assets/whitecarrot.svg') no-repeat;
+  width:120px;
+  height: 120px;
+}
+.carrot input[type="checkbox"]:checked + label {
+  background: url('../../assets/carrot-color.png') no-repeat;
+  width: 120px;
+  height: 120px;
+}
+
+.lettuce input[type="checkbox"] {
+  display: none;
+}
+.lettuce input[type="checkbox"]+label {
+  background: url('../../assets/whitelettuce.svg') no-repeat;
+  width:120px;
+  height: 120px;
+}
+.lettuce input[type="checkbox"]:checked + label {
+  background: url('../../assets/Salad-color.png') no-repeat;
+  width: 120px;
+  height: 120px;
+}
+
+.bell-pepper input[type="checkbox"] {
+  display: none;
+}
+.bell-pepper input[type="checkbox"]+label {
+  background: url('../../assets/whitepepper.svg') no-repeat;
+  width:120px;
+  height: 120px;
+}
+.bell-pepper input[type="checkbox"]:checked + label {
+  background: url('../../assets/pepper-color.png') no-repeat;
   width: 120px;
   height: 120px;
 }

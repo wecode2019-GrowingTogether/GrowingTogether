@@ -2,8 +2,8 @@
  <div id="app">
 
    <header>
-     <h1>Growing Gardens</h1>
-     <img src="./assets/GG-Logo.png"><br/>
+     <!-- <h1>Growing Gardens</h1> -->
+     <img src="./assets/logo-white.png" class="logo"><br/>
      <span v-if="user">
         Hello {{user.username}}
      </span>
@@ -76,8 +76,12 @@ export default {
 </script>
 
 <style scoped>
+.logo {
+  height: 150px;
+  width: auto;
+}
 #app {
- font-family: 'Avenir', Helvetica, Arial, sans-serif;
+ font-family: 'Open Sans', sans-serif;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
  text-align: center;
@@ -90,8 +94,8 @@ export default {
 }
 
 header {
-  height: 180px;
-  background: black;
+  height: 210px;
+  background:#89CC93;
   margin: 0;
   padding: 0
 }
